@@ -1,5 +1,4 @@
-# macro-assist
-Basic Macro Automation
+# Macro Assist: Basic Macro Automation
 
 ![macroassist](https://github.com/dylan-sh/macro-assist/assets/50163127/29f44c20-d5e0-45db-ac67-84f9d8819c46)
 
