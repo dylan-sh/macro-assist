@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="397.0" prefWidth="1020.0" style="-fx-background-color: #2c3e50;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <top>
+      <Label alignment="CENTER" prefHeight="69.0" prefWidth="222.0" style="-fx-text-fill: #ecf0f1;" text="Macro Assist" textAlignment="CENTER" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Caviar Dreams Bold" size="24.0" />
+         </font>
+      </Label>
+   </top>
+   <bottom>
+      <Label fx:id="cursorLoc" style="-fx-text-fill: #ecf0f1;" BorderPane.alignment="CENTER" />
+   </bottom>
+   <center>
+      <GridPane alignment="CENTER" prefHeight="242.0" prefWidth="1020.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="b0" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#toggle0" prefHeight="56.0" prefWidth="293.0" style="-fx-background-color: #95a5a6; -fx-text-fill: #ecf0f1;" text="Toggle" textAlignment="CENTER">
+               <font>
+                  <Font name="Caviar Dreams" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="b4" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#toggle4" prefHeight="56.0" prefWidth="293.0" style="-fx-background-color: #95a5a6; -fx-text-fill: #ecf0f1;" text="Toggle" textAlignment="CENTER" GridPane.columnIndex="2">
+               <font>
+                  <Font name="Caviar Dreams" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="b6" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#toggle6" prefHeight="56.0" prefWidth="293.0" style="-fx-background-color: #95a5a6; -fx-text-fill: #ecf0f1;" text="Toggle" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Caviar Dreams" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="b2" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#toggle2" prefHeight="56.0" prefWidth="293.0" style="-fx-background-color: #95a5a6; -fx-text-fill: #ecf0f1;" text="Toggle" textAlignment="CENTER" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Caviar Dreams" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="b5" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#toggle5" prefHeight="56.0" prefWidth="293.0" style="-fx-background-color: #95a5a6; -fx-text-fill: #ecf0f1;" text="Toggle" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Caviar Dreams" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="b1" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#toggle1" prefHeight="56.0" prefWidth="293.0" style="-fx-background-color: #95a5a6; -fx-text-fill: #ecf0f1;" text="Toggle" textAlignment="CENTER" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Caviar Dreams" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="b7" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#toggle7" prefHeight="56.0" prefWidth="293.0" style="-fx-background-color: #95a5a6; -fx-text-fill: #ecf0f1;" text="Toggle" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Caviar Dreams" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="b3" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#toggle3" prefHeight="56.0" prefWidth="293.0" style="-fx-background-color: #95a5a6; -fx-text-fill: #ecf0f1;" text="Toggle" textAlignment="CENTER" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Caviar Dreams" size="17.0" />
+               </font>
+            </Button>
+            <TextField fx:id="t0" prefHeight="56.0" prefWidth="255.0" promptText="macro#:keycode" style="-fx-background-color: #95a5a6;" text="macro#:keycode" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Caviar Dreams" size="17.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="t1" prefHeight="56.0" prefWidth="255.0" promptText="macro#:keycode" style="-fx-background-color: #95a5a6;" text="macro#:keycode" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Caviar Dreams" size="17.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="t2" prefHeight="56.0" prefWidth="255.0" promptText="macro#:keycode" style="-fx-background-color: #95a5a6;" text="macro#:keycode" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Caviar Dreams" size="17.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="t3" prefHeight="56.0" prefWidth="255.0" promptText="macro#:keycode" style="-fx-background-color: #95a5a6;" text="macro#:keycode" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Caviar Dreams" size="17.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="t4" prefHeight="56.0" prefWidth="255.0" promptText="macro#:keycode" style="-fx-background-color: #95a5a6;" text="macro#:keycode" GridPane.columnIndex="3">
+               <font>
+                  <Font name="Caviar Dreams" size="17.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="t5" prefHeight="56.0" prefWidth="255.0" promptText="macro#:keycode" style="-fx-background-color: #95a5a6;" text="macro#:keycode" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Caviar Dreams" size="17.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="t6" prefHeight="56.0" prefWidth="255.0" promptText="macro#:keycode" style="-fx-background-color: #95a5a6;" text="macro#:keycode" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Caviar Dreams" size="17.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="t7" prefHeight="56.0" prefWidth="255.0" promptText="macro#:keycode" style="-fx-background-color: #95a5a6;" text="macro#:keycode" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Caviar Dreams" size="17.0" />
+               </font>
+            </TextField>
+         </children>
+      </GridPane>
+   </center>
+</BorderPane>
